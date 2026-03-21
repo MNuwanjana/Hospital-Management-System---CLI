@@ -1,18 +1,25 @@
 #ifndef EMERGENCY_STACK_H
 #define EMERGENCY_STACK_H
 
-// Function declarations (prototypes)
+// Patient structure for Emergency Stack
+struct Patient {
+    int id;
+    char name[50];
+    struct Patient* next;
+};
+
+// Function prototypes for Emergency Stack module
 
 // Add emergency patient (Push)
 void add_emergency_patient();
 
-// Treat patient (Pop)
+// Treat emergency patient (Pop)
 void treat_patient();
 
-// Display emergency patients
-void display();
+// Display all emergency patients
+void display_emergency_patients();
 
-// Run full emergency system (menu)
+// Run Emergency System (Menu)
 void run_emergency_system();
 
 #endif
