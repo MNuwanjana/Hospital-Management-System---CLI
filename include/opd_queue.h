@@ -13,7 +13,6 @@ struct OPDPatient {
 };
 
 // Function prototypes for the OPD module
-void clearBuffer();
 void enqueue();
 void dequeue();
 void peek();

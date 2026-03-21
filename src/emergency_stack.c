@@ -3,17 +3,17 @@
 #include <string.h>
 #include "../include/emergency_stack.h"
 
-struct Patient* top = NULL;
+static struct EmPatient* top = NULL;
 
 // Clear input buffer
-void clearBuffer() {
+static void clearBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
 // Add Emergency Patient (Push)
 void add_emergency_patient() {
-    struct Patient* newNode = (struct Patient*)malloc(sizeof(struct Patient));
+    struct EmPatient* newNode = (struct EmPatient*)malloc(sizeof(struct EmPatient));
 
     if (newNode == NULL) {
         printf("Memory allocation failed!\n");
@@ -57,7 +57,7 @@ void treat_patient() {
         return;
     }
 
-    struct Patient* temp = top;
+    struct EmPatient* temp = top;
 
     printf("\n Treating Patient:\n");
     printf("ID: %d | Name: %s\n", temp->id, temp->full_name);
@@ -70,7 +70,7 @@ void treat_patient() {
 
 // Display All Patients
 void display_emergency_patients() {
-    struct Patient* temp = top;
+    struct EmPatient* temp = top;
 
     if (temp == NULL) {
         printf("No emergency patients\n");
@@ -110,7 +110,7 @@ int isEmpty() {
 // Count Patients
 int count_emergency_patients() {
     int count = 0;
-    struct Patient* temp = top;
+    struct EmPatient* temp = top;
 
     while (temp != NULL) {
         count++;
@@ -127,7 +127,7 @@ void search_emergency_patient() {
     printf("Enter Patient ID to search: ");
     scanf("%d", &id);
 
-    struct Patient* temp = top;
+    struct EmPatient* temp = top;
 
     while (temp != NULL) {
         if (temp->id == id) {
@@ -146,7 +146,7 @@ void search_emergency_patient() {
 
 // Clear Stack
 void clear_emergency_stack() {
-    struct Patient* temp;
+    struct EmPatient* temp;
 
     while (top != NULL) {
         temp = top;

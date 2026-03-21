@@ -2,7 +2,7 @@
 #define EMERGENCY_STACK_H
 
 // Emergency Patient Structure
-typedef struct Patient {
+typedef struct EmPatient {
     int id;
     char full_name[100];
     int age;
@@ -10,8 +10,8 @@ typedef struct Patient {
     char contact_number[15];
     char emergency_type[50];
     int severity_level;
-    struct Patient* next;
-} Patient;
+    struct EmPatient* next;
+} EmPatient;
 
 // Stack Operations (Core)
 void add_emergency_patient();        // Push

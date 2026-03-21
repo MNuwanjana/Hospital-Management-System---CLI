@@ -11,7 +11,7 @@ struct OPDPatient* rear = NULL;
 int next_patient_id = 1;
 
 // Helper function to clear the input buffer to prevent skipping inputs
-void clearBuffer() {
+static void clearBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
