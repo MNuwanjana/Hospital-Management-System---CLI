@@ -52,8 +52,8 @@ void display() {
     }
 }
 
-//Main Function  
-int main() {
+//Call Main Function  
+void run_emergency_stack() {
     int choice;
 
     do {
