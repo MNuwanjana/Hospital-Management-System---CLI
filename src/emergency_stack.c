@@ -53,11 +53,11 @@ void display() {
 }
 
 //Call Main Function  
-void run_emergency_stack() {
+void run_emergency_system() {
     int choice;
 
     do {
-        printf("\n--- Emergency Stack Menu ---\n");
+        printf("\n--- Emergency System Menu ---\n");
         printf("1. Add Emergency Patient (Push)\n");
         printf("2. Treat Patient (Pop)\n");
         printf("3. Display Emergency Patients\n");
