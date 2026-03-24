@@ -43,17 +43,19 @@ Ensure you have a C compiler installed (e.g., **GCC**):
 
 - **Windows:** Install MinGW or use WSL  
 - **Linux (Ubuntu/Debian):**
+  
   ```bash
   sudo apt install build-essential
   ```
 - **MacOs:**
+  
   ```bash
   xcode-select --install
   ```
 
 ### ⚙️ Compilation Steps
 
--**Clone the Repository**
+- **Clone the Repository**
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
@@ -61,4 +63,41 @@ cd your-repo-name
 
 #### 🔧 Method 1: Using Makefile (Recommended)
 
--**Open terminal in the project root directory**
+1. **Open terminal in the project root directory**
+2. **Run**
+   - **Windows**
+     
+     ``` bash
+     mingw32-make
+     ```
+
+     
+   - **Linux / macOS:**
+     
+     ``` bash
+     make
+     ```
+3. **The system will compile all .c files and generate the executable.**
+
+
+#### 🧱 Method 2: Manual Compilation (Fallback)
+
+```bash
+gcc main.c pharmacy_array.c endless_vitals.c -o hospital_system
+```
+
+***💡 Add other .c files if your project contains more modules.***
+
+
+## 👥 Contributors
+* Malaka Prasad | @prasad-liy22  - Project Lead & Pharmacy Inventory
+* Mithesha Nuwanjana |@MNuwanjana - OPD Waiting System
+* Thiseni Nudara | @Thiseni-Nuda - Ward Navigation & Management
+* Sahiru Sheyan | @sahiru-03 - ICU Bed Management
+* Sandeepa Dilmina | @sandeepa-gittech - Patient Treatment Sequence
+* Thamod Idusara | @thamod-03 - Round-Robin Duty Rosters
+* Malindu Hasintha | @malinduhasintha11-lang - Endless Vitals Monitor
+* Amaya Senadheera | @Amaya-Senadheera - Emergency case Handling
+
+**Developed with ❤️ by IT Undergraduates for the DSA - part I Module.**
+  
