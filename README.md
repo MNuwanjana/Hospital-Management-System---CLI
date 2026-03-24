@@ -16,7 +16,20 @@ This system consists of 8 main modules, each utilizing a specific data structure
 8. **Pharmacy Inventory** (`Array` with `Bubble/Insertion Sort`) - Manages medicine stock and prioritizes dispensing based on expiration dates.
 
 ## 🛠️ How to Compile and Run
-*(Instructions on how to compile the C files will be added here once the main implementation is done)*
+## 🛠️ How to Compile and Run
+
+### Prerequisites
+Make sure you have a C compiler installed on your system (e.g., **GCC**).
+* **Windows:** Install [MinGW](https://www.msys2.org/) or use WSL.
+* **Linux (Ubuntu/Debian):** Run `sudo apt install build-essential`
+* **macOS:** Run `xcode-select --install`
+
+### Compilation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   cd your-repo-name
 
 ## 👥 Contributors
 * Malaka Prasad | @prasad-liy22  - Project Lead & Pharmacy Inventory
