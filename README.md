@@ -27,4 +27,3 @@ This system consists of 8 main modules, each utilizing a specific data structure
 * Thamod Idusara | @thamod-03 - Round-Robin Duty Rosters
 * Malindu Hasintha | @malinduhasintha11-lang - Endless Vitals Monitor
 * Amaya Senadheera | @Amaya-Senadheera - Emergency case Handling
-*(Add the rest of your team members here)*
