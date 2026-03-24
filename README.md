@@ -30,6 +30,25 @@ Make sure you have a C compiler installed on your system (e.g., **GCC**).
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
    cd your-repo-name
 
+2. Compile
+   #### Method 1: Using Makefile (Recommended)
+      This project includes a `Makefile` to automate the compilation and linking of multiple modules.
+
+         1. Open your terminal in the root directory of the repository.
+         2. Run the appropriate make command for your OS:
+         * **Windows:** ```cmd
+              mingw32-make
+         ```
+          **Linux / macOS:** ```bash
+           make
+        ```
+      3. The compiler will automatically build all `.c` files and generate the final executable.
+
+   #### Method 2: Manual Compilation (Fallback)
+      If you prefer not to use Make, you can manually compile and link all source files using GCC:
+         ```bash
+            gcc main.c pharmacy_array.c endless_vitals.c -o hospital_system
+
 ## 👥 Contributors
 * Malaka Prasad | @prasad-liy22  - Project Lead & Pharmacy Inventory
 * Mithesha Nuwanjana |@MNuwanjana - OPD Waiting System
